@@ -172,19 +172,90 @@ No manual intermediate steps are required.
 
 ## 🏗️ System Architecture
 
-```text
-User Upload
-     ↓
-Data Processing (Pandas, NumPy)
-     ↓
-EDA & Visualization
-     ↓
-Machine Learning Model Training
-     ↓
-Model Evaluation
-     ↓
-Groq LLM API
-     ↓
-Natural Language Insights
-     ↓
+| Step | Component                           | Description                          |
+|------|-------------------------------------|--------------------------------------|
+| 1    | User Upload                         | Upload CSV / document data           |
+| 2    | Data Processing (Pandas, NumPy)     | Cleaning, preprocessing, feature prep|
+| 3    | EDA & Visualization                 | Stats, plots, correlations           |
+| 4    | Machine Learning Model Training     | Train ML models                      |
+| 5    | Model Evaluation                    | Metrics and performance checks       |
+| 6    | Groq LLM API                        | Send context to LLM                  |
+| 7    | Natural Language Insights           | Generate explanations                |
+| 8    | Interactive UI Output (Gradio)      | Show results in dashboard            |
+
 Interactive UI Output (Gradio)
+
+## 🛠️ Technology Stack
+
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Scikit-Learn  
+- Groq LLM API  
+- Gradio  
+
+📦 Installation
+1. Clone Repository
+bash
+git clone https://github.com/your-username/data-groq-smart-document-analytics.git
+cd data-groq-smart-document-analytics
+2. Install Dependencies
+bash
+pip install -r requirements.txt
+3. Set Groq API Key
+Create a .env file in the project root:
+
+text
+GROQ_API_KEY=your_api_key_here
+4. Run Application
+bash
+python app.py
+Or run the provided notebook in Google Colab.
+
+🎯 Use Cases
+Business document analysis
+
+Sales data intelligence
+
+Customer behavior insights
+
+Academic research analysis
+
+Predictive modeling projects
+
+AI portfolio demonstration
+
+💡 Why This Project Is Powerful
+Combines Machine Learning + LLM
+
+Fully automated analytics pipeline
+
+AI explanation layer
+
+Business-ready intelligence
+
+Strong project for resumes and portfolios
+
+Industry-relevant architecture
+
+🔮 Future Enhancements
+AutoML integration
+
+Model comparison dashboard
+
+SHAP-based explainability
+
+Multi-document support (PDF, DOCX)
+
+Vector database integration
+
+RAG-based document Q&A system
+
+Cloud deployment (AWS / GCP)
+
+👨‍💻 Author
+Laxman Reddy
+B.Tech CSE | Data Science & AI
+Data Science & AI Intern @ Cognizant
